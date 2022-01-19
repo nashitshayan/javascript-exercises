@@ -85,17 +85,43 @@
 
 //ctor exercise
 
-function BookMaker(title, author, pages, isRead)
-{
-  this.title= title;
-  this.author= author;
-  this.pages = pages;
-  this.isRead= isRead? 'read' : 'not read yet';
-  this.info = ()=>{
-    return (this.title + ' by ' + this.author + ', ' + this.pages + ' pages, ' + this.isRead);
-  }
-}
+// function BookMaker(title, author, pages, isRead)
+// {
+//   this.title= title;
+//   this.author= author;
+//   this.pages = pages;
+//   this.isRead= isRead? 'read' : 'not read yet';
+//   this.info = ()=>{
+//     return (this.title + ' by ' + this.author + ', ' + this.pages + ' pages, ' + this.isRead);
+//   }
+// }
 
-const b1= new BookMaker('book', 'author', '300', false);
+// const b1= new BookMaker('book', 'author', '300', false);
 
-console.log(b1.info())
+// console.log(b1.info())
+
+
+
+//prototype exercises
+
+let head = {
+  glasses: 1
+};
+
+let table = {
+  pen: 3
+};
+
+let bed = {
+  sheet: 1,
+  pillow: 2
+};
+
+let pockets = {
+  money: 2000
+};
+
+pockets.__proto__= bed;
+bed.__proto__= table;
+table.__proto__= head;
+console.log(pockets.glasses)
