@@ -104,24 +104,37 @@
 
 //prototype exercises
 
-let head = {
-  glasses: 1
-};
+// let head = {
+//   glasses: 1
+// };
 
-let table = {
-  pen: 3
-};
+// let table = {
+//   pen: 3
+// };
 
-let bed = {
-  sheet: 1,
-  pillow: 2
-};
+// let bed = {
+//   sheet: 1,
+//   pillow: 2
+// };
 
-let pockets = {
-  money: 2000
-};
+// let pockets = {
+//   money: 2000
+// };
 
-pockets.__proto__= bed;
-bed.__proto__= table;
-table.__proto__= head;
-console.log(pockets.glasses)
+// pockets.__proto__= bed;
+// bed.__proto__= table;
+// table.__proto__= head;
+// console.log(pockets.glasses)
+
+
+
+//factory function practice
+
+// const personFactory = (name, age)=>{
+//   const sayHello = () => console.log(`Hello! ${name}`);
+//   return {name, age, sayHello};
+// }
+
+// const khan = personFactory('nashit', 23)
+// khan.sayHello();
+
