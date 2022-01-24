@@ -140,27 +140,27 @@
 
 
 
-// const Person =(name) =>{
-//   const sayMyName= ()=> console.log(`My name is ${name}`);
-//   const sunnahSupremacy = () => console.log(`Let the sunnah for forth!`);
-//   return {sayMyName, sunnahSupremacy};
-// }
-
-// // const Akh = (name)=>{
-// //   const {sayMyName}= Person(name);
-// //   const akhTing = ()=> console.log(`Akh got a nice beard! `);
-// //   return {sayMyName, akhTing};
-// // }
+const Person =(name) =>{
+  const sayMyName= ()=> console.log(`My name is ${name}`);
+  const sunnahSupremacy = () => console.log(`Let the sunnah for forth!`);
+  return {sayMyName, sunnahSupremacy};
+}
 
 // const Akh = (name)=>{
-//   const prototype = Person(name);
-//   console.dir(prototype)
+//   const {sayMyName}= Person(name);
 //   const akhTing = ()=> console.log(`Akh got a nice beard! `);
-//   return Object.assign({}, prototype,{akhTing});
+//   return {sayMyName, akhTing};
 // }
-// const akh1 = Akh('Hamoody');
-// // console.dir(akh1)
-// // akh1.sayMyName();
-// // akh1.akhTing();
+
+const Akh = (name)=>{
+  const prototype = Person(name);
+  console.dir(prototype)
+  const akhTing = ()=> console.log(`Akh got a nice beard! `);
+  return Object.assign({}, prototype,{akhTing});
+}
+const akh1 = Akh('Hamoody');
+// console.dir(akh1)
+// akh1.sayMyName();
+// akh1.akhTing();
 
 
