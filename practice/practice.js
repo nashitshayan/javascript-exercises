@@ -138,3 +138,20 @@
 // const khan = personFactory('nashit', 23)
 // khan.sayHello();
 
+
+
+// const Person =(name) =>{
+//   const sayMyName= ()=> console.log(`My name is ${name}`);
+//   return {sayMyName};
+// }
+
+// const Akh = (name)=>{
+//   const {sayMyName}= Person(name);
+//   const akhTing = ()=> console.log(`Akh got a nice beard! `);
+//   return {sayMyName, akhTing};
+// }
+
+// const akh1 = Akh('Hamoody');
+
+// akh1.sayMyName();
+// akh1.akhTing();
